@@ -4,13 +4,10 @@
 <div class="container" *ngIf="colleges">
   <div class="card"  *ngFor="let college of colleges">
     <div class="first-div">
-      <div class="promoted-div">
+      <div class="promoted-div" *ngIf="college.promoted">
       </div>
       <div class="promoted-text" *ngIf="college.promoted">
         PROMOTED
-      </div>
-      <div class="promoted-text" *ngIf="!college.promoted">
-        NON PROMOTED
       </div>
       <div class="rating">
         <div>
@@ -28,10 +25,10 @@
   
       <div class="lower-text">
         <div class="best-colleges">
-         {{college.tags[0]}}
+         <span class="uppercase">{{college.tags[0].substring(0,1)}}</span>{{college.tags[0].substring(1,college.tags[0].length)}}
         </div>
         <div class="distance">
-          {{college.tags[1]}}
+          <span class="uppercase">{{college.tags[1].substring(0,1)}}</span>{{college.tags[1].substring(1,college.tags[1].length)}}
         </div>
         <div class="location">
           #{{college.ranking}}
@@ -78,8 +75,11 @@
             </span>
            </div>
            <div class="text-light">
-             <span class="text-green"> 93% Match : </span> {{college.famous_nearest_places}}
-           </div>
+             <span class="text-green"> 93% Match : </span>  <span class="text-dark"> {{ college.famous_nearest_places.substring(0,5) }}</span> 
+            <span> {{ college.famous_nearest_places.substring(6,21) }}</span>
+            <span class="text-dark"> {{ college.famous_nearest_places.substring(22,28) }}</span> 
+            <span> {{ college.famous_nearest_places.substring(28,college.famous_nearest_places.length) }}</span>
+            </div>
         </div>
         <div class="first-right-half">
           <div>
@@ -97,9 +97,13 @@
       <div class="third-row-details">
         <div class="first-left-half">
           <div class="padding background-green text-dark">
-            
-              Flat Rs <span class="text-green">2,000</span>off + upto Rs <span class="text-green">500 </span>wallet! to avail... <span class="text-blue">LOGIN</span>
-            
+             <span>{{college.offertext.substring(0,7)}}</span>
+            <span class="text-green"> {{college.offertext.substring(7,12)}}</span>
+            <span>{{college.offertext.substring(12,26)}}</span>
+            <span class="text-green">{{college.offertext.substring(26,30)}}</span>
+            <span>{{college.offertext.substring(30,51)}}</span>
+            <span class="text-blue">{{college.offertext.substring(51,college.offertext.length)}}</span>
+
            </div>
         </div>
         <div class="first-right-half">

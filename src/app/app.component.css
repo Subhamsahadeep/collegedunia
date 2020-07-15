@@ -355,3 +355,6 @@
 .font-size-25{
     font-size: 25px;
 }
+.uppercase{
+  text-transform: uppercase;
+}
