@@ -1,0 +1,357 @@
+.body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+}
+.start{
+  padding-top: 5px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 49%;
+    padding-top: 2%;
+}
+.card .first-div{
+    position: relative;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url('../assets/college_02.jpg');
+    height: 300px; /* You must set a specified height */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: fill; /* Resize the background image to cover the entire container */
+    
+   }
+   
+ .card .first-div .rating{
+     position: absolute;
+       background-color: #f5a626;
+       width: 10%;
+       padding: 5px;
+       text-align: center;
+       border-radius: 5px;
+       right: 2%;
+       top: 8%;
+   }
+   .card .first-div .rating .span-rating-one{
+    color: white;
+    font-size: 20px;
+}
+.card .first-div .rating .span-rating-two{
+    color: white;
+    font-size: 13.5px;
+}
+.card .first-div .rating .comment{
+    color: white;
+    font-size: 13.5px;
+}
+.promoted-div {
+    position: absolute;
+    top: -5%;
+    right: 0%;
+        width: 132px;
+        border-width: 16px;
+        border-color: #68a7ff #68a7ff #68a7ff transparent;
+        border-style: solid;
+}
+.promoted-text {
+        position: absolute;
+        top: -2.5%;
+        right: 3%;
+        color: #ffffff;
+       
+}
+.card .first-div .lower-text{
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    font-size: 14px;
+}
+.card .first-div .lower-text .best-colleges{
+    background-color: #ffffff;
+    color: #444444;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    flex: 0.3;
+    margin: 0 5px;
+    
+}
+
+.card .first-div .lower-text .distance{
+    background-color: #ffffff;
+    color: #444444;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    flex: 0.2;
+    margin: 0 5px;
+    
+}
+.card .first-div .lower-text .location{
+    color: #ffffff;
+    text-align: center;
+    justify-content: end;
+    flex: 1;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.card .second-div{
+    height: 377px;
+    border-radius: 3.8px;
+    box-shadow: 1px 1px 10px 1px #d0d0d0;
+    border: solid 0.2px #d0d0d0;
+    position: relative;
+    height: 150px; /* You must set a specified height */
+}
+.card .second-div .first-row-details{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
+.title-of-college{
+    
+    font-size: 13.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: normal;
+    text-align: center;
+    color: #444444;
+    font-style: normal;
+    margin:0 10px;
+
+}
+.star {
+    position: relative;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid #444444;
+    border-left:   .3em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 8px;
+  }
+    
+  .star:before, .star:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: .6em;
+    left: -1em;
+  
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #444444;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  .star:after {  
+    transform: rotate(35deg);
+  }
+
+
+.un-star {
+    position: relative;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid #d0d0d0;
+    border-left:   .3em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 8px;
+  }
+    
+  .un-star:before, .un-star:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: .6em;
+    left: -1em;
+  
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #d0d0d0;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  .un-star:after {  
+    transform: rotate(35deg);
+  }
+
+  .rates{
+    flex: 0.8;
+    text-align: right;
+    min-width: 300px;
+
+  }
+  .pentagon {
+    width: 24px;
+    height: 26.735px;
+    background: red;
+    position: relative;
+    left: 2%;
+    -webkit-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+    z-index: -1;
+  }
+  .pentagon::before {
+    content: "";
+    position: absolute;
+    top: -12.9px;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-left: 13px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 12.8675px solid red;
+  }
+.rates .rate-break{
+    text-decoration: line-through;
+    color: #444444;
+}
+  .circle-text {
+    display: flex;
+    position: absolute;
+    /* width: 56px; */
+    right: 21px;
+    padding-top: 3px;
+
+  }
+.circle{
+    width: 5px;
+    height: 5px;
+    margin-top: 8px;
+    border-radius: 500%;
+    background-color: #ffffff;
+    padding-right: -1px;
+    margin-right: 1px;
+  }
+ .text{
+    color: #ffffff;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-left: 0px;
+ }
+
+ .second-div .second-row-details{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+}
+ .second-div .second-row-details .first-left-half{
+     width: 60%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  padding-left: 10px;
+  font-size: 13.5px;
+ }
+
+ .second-div .second-row-details .first-right-half{
+    width: 40%;
+    text-align: right;
+    font-size: 13.5px;
+    padding-right: 25px;
+}
+.second-div .second-row-details .first-left-half .deep{
+  color: #444444;
+  border-right: 2px solid #444444;
+}
+.second-div .second-row-details .first-left-half .shallow{
+    color: #adadad;
+    padding-left: 5px;
+  }
+
+.second-div .third-row-details{
+    width: 100%;
+    display: flex;
+
+}
+ .second-div .third-row-details .first-left-half{
+     width: 60%;
+     font-size: 13.5px;
+ }
+
+ .second-div .third-row-details .first-right-half{
+    width: 40%;
+    text-align: right;
+    font-size: 13.5px;
+    padding-right: 15px;
+    /* padding-top: 10px; */
+}
+.padding.background-green.text-dark{
+    padding: 10px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.text-green{
+    color: #37b396;
+}
+.text-dark{
+    color: #444444;
+}
+.text-light{
+    color:#adadad;
+}
+.text-red{
+    color: #dd1c26;
+    font-size: 28.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  text-align: center;
+  color: #dd1c26;
+}
+.text-blue{
+    color:#1999d2;
+}
+.background-green{
+    background-color: #ccf5e7;
+}
+.font-size-25{
+    font-size: 25px;
+}
