@@ -11,7 +11,5 @@ export class AppComponent {
   title = 'hello-Angular';
   colleges: Colleges = (data as any).colleges;
   constructor(){}
-  ngOnInit(){
-    console.log(this.colleges);
-  }
+  ngOnInit(){}
 }
